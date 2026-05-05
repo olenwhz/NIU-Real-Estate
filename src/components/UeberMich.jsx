@@ -66,7 +66,7 @@ export default function UeberMich() {
               <img
                 src={oleFoto}
                 alt="Ole Nieuwenhuizen – NIU Immobilien"
-                className="w-full h-full object-cover object-top"
+                className="w-full h-full object-cover object-bottom"
               />
               {/* Gold accent card */}
               <div className="absolute bottom-6 left-6 right-6 bg-white/90 backdrop-blur-sm rounded-2xl p-5 shadow-xl">
