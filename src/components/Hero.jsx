@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import drohnenFoto from '../assets/Bildschirmfoto 2026-05-05 um 21.18.38.png'
 
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
@@ -20,21 +21,13 @@ export default function Hero() {
       id="hero"
       className="relative min-h-screen flex flex-col justify-center items-center text-center overflow-hidden"
     >
-      {/* Background: Video wenn vorhanden, sonst Fallback-Bild */}
+      {/* Background: Drohnenfoto */}
       <div className="absolute inset-0 z-0">
-        {/* ── Video-Hintergrund ──────────────────────────────────────────
-            Lege dein Video unter public/hero-video.mp4 ab.
-            Solange die Datei fehlt, zeigt der Browser nur das poster-Bild. */}
-        <video
+        <img
+          src={drohnenFoto}
+          alt="NIU Immobilien – Drohnenaufnahme"
           className="w-full h-full object-cover object-center"
-          autoPlay
-          muted
-          loop
-          playsInline
-          poster="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1920&q=80&auto=format&fit=crop"
-        >
-          <source src="/hero-video.mp4" type="video/mp4" />
-        </video>
+        />
         {/* Overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-anthrazit/70 via-anthrazit/55 to-anthrazit/80" />
       </div>
