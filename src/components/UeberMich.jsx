@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import oleFoto from '../assets/F8D9FF0D-D474-40AB-810C-ADDE0C1AE10E_1_105_c.jpeg'
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -63,7 +64,7 @@ export default function UeberMich() {
           >
             <div className="relative overflow-hidden rounded-3xl aspect-[4/5]">
               <img
-                src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=800&q=80&auto=format&fit=crop"
+                src={oleFoto}
                 alt="Ole Nieuwenhuizen – NIU Immobilien"
                 className="w-full h-full object-cover object-top"
               />
